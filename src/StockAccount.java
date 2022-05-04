@@ -1,11 +1,9 @@
-public class StockAccount extends Thread {
+public class StockAccount extends Thread{
     int money = 1000;
     @Override
-    public void run() {
+    public void run(){
         while(true){
             money++;
         }
     }
 }
-
-

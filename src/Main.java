@@ -7,7 +7,7 @@
             }
         }
 
-        class AdThread extends Thread{
+         class AdThread extends Thread{
             public void run(){
                 Advertisement.show();
             }
