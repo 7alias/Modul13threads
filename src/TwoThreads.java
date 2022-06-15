@@ -27,11 +27,11 @@ public class TwoThreads {
                     Random random = new Random();
                     int rand = 0;
                     while (true) {
-                        Thread.sleep(100);
+                        Thread.sleep(1000);
                         rand = random.nextInt(10);
                         if (rand == 5) {
-                            System.out.println("First threat: " + queue.take());
-                            System.out.println("Second threat: " + rand);
+                            System.out.println("First thread: " + queue.take());
+                            System.out.println("Second thread: " + rand);
                             System.out.println("Queue size: " + queue.size() + "\n");
                         }
                     }
